@@ -29,7 +29,7 @@ const signinUser= async (email: string, password: string) => {
 
   const match = await bcrypt.compare(password, user.password);
 
-  console.log({ match });
+
   if (!match) {
     return false;
   }
